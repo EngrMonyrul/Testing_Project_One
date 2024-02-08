@@ -26,8 +26,8 @@
 2. **Flutter firebase setup**
     - Add necessary dependencies like firebase_core, firebase_messaging, flutter_local_notification,
       app_setting `https://pub.dev`
-    - Make a class for firebase notification permission 
-      ```
+    - Make a class for firebase notification permission
+      ```dart
       Future<void> getNotificationPermission() async {
         NotificationSettings settings = await firebaseMessagingInstance.requestPermission(
           sound: true,
