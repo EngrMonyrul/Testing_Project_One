@@ -29,6 +29,7 @@ class NotificationHandler {
       await AppSettings.openAppSettings();
     }
 
+    await checkDeviceToken();
   }
 
   /*---------------> Checking device token <-----------------*/

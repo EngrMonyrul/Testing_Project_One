@@ -26,32 +26,11 @@
 2. **Flutter firebase setup**
     - Add necessary dependencies like firebase_core, firebase_messaging, flutter_local_notification,
       app_setting `https://pub.dev`
-    - Make a class for firebase notification permission
-      ```dart
-      Future<void> getNotificationPermission() async {
-        NotificationSettings settings = await firebaseMessagingInstance.requestPermission(
-          sound: true,
-          alert: true,
-          announcement: true,
-          badge: true,
-          carPlay: true,
-          criticalAlert: true,
-          provisional: true,
-        );
-
-        if (settings.authorizationStatus == AuthorizationStatus.authorized) {
-          debugPrint('Authorized Done');
-        } else if (settings.authorizationStatus == AuthorizationStatus.provisional) {
-          debugPrint('Provisional Authorized Done');
-        } else {
-          await AppSettings.openAppSettings();
-        }
-      }
-      ```
-    - Take 2 permission authorized and probational if all are denied then open the setting for
-      permission
+    - Make a class for firebase notification permission `Using firebase message`
+    - Take 2 permission authorized and provisional if all are denied then open the setting for
+      permission `2 permission authorized, provisional`
 
 3. **Device token handle**
-    - Generate token from and store
+    - Generate token from and store `getToken`
     - Refresh token and store
     - Register token number in firebase messaging
