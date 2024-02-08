@@ -18,3 +18,8 @@
     - Add necessary dependencies like firebase_core, firebase_messaging, flutter_local_notification, app_setting
     - Make a class for firebase notification permission
     - Take 2 permission authorized and probational if all are denied then open the setting for permission
+
+3. **Device token handle**
+    - Generate token from and store
+    - Refresh token and store
+    - Register token number in firebase messaging
