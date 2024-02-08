@@ -31,6 +31,6 @@
       permission `2 permission authorized, provisional`
 
 3. **Device token handle**
-    - Generate token from and store `getToken`
-    - Refresh token and store
-    - Register token number in firebase messaging
+    - Generate token from and store `Using getToken`
+    - Refresh token and store `onTokenRefresh`
+    - Register token number in firebase messaging `Register token in firebase messaging` 
