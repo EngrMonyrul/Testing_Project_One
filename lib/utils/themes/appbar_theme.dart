@@ -5,13 +5,13 @@ class AppbarTheme {
 
   /*---------------> Light appbar <--------------*/
   static const lightAppbarTheme = AppBarTheme(
-    backgroundColor: Colors.deepOrange,
+    backgroundColor: Colors.transparent,
     iconTheme: IconThemeData(color: Colors.white),
   );
 
   /*---------------> Dark appbar <--------------*/
-  static final darkAppbarTheme = AppBarTheme(
-    backgroundColor: Colors.deepOrange.withOpacity(0.5),
-    iconTheme: const IconThemeData(color: Colors.white),
+  static const darkAppbarTheme = AppBarTheme(
+    backgroundColor: Colors.transparent,
+    iconTheme: IconThemeData(color: Colors.white),
   );
 }

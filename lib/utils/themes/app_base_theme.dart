@@ -9,11 +9,13 @@ class AppBaseTheme {
   static final lightAppTheme = ThemeData.light().copyWith(
     appBarTheme: AppbarTheme.lightAppbarTheme,
     colorScheme: AppsColorScheme.lightColorScheme,
+    scaffoldBackgroundColor: Colors.transparent,
   );
 
   /*------------------> Dark app theme <-----------------*/
   static final darkAppTheme = ThemeData.dark().copyWith(
     appBarTheme: AppbarTheme.darkAppbarTheme,
     colorScheme: AppsColorScheme.darkColorScheme,
+    scaffoldBackgroundColor: Colors.transparent,
   );
 }

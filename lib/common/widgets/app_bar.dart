@@ -8,6 +8,7 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
     required this.showBackButton,
     this.onPressedBack,
     this.backButtonIcon,
+    this.centerTitle,
   });
 
   final Widget? title;
@@ -15,6 +16,7 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
   final bool showBackButton;
   final VoidCallback? onPressedBack;
   final IconData? backButtonIcon;
+  final bool? centerTitle;
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +25,7 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
         AppBar(
           automaticallyImplyLeading: false,
           title: title,
-          centerTitle: true,
+          centerTitle: centerTitle ?? false,
           actions: actionWidgets,
           leading: showBackButton
               ? IconButton(
