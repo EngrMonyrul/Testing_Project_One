@@ -18,7 +18,9 @@
     - Add necessary dependencies like firebase_core, firebase_messaging, flutter_local_notification,
       app_setting `https://pub.dev`
     - Make a class for firebase notification permission `class for firebase notification access`
-   ```hello```
+   ```
+    hello
+   ```
     - Take 2 permission authorized and probational if all are denied then open the setting for
       permission
 
