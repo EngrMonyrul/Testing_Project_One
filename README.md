@@ -11,12 +11,12 @@
     - Check firebase projects and select for setup ```firebase projects:list```
     - Active cli `Instruction given in firebase flutter setting`
     - Configure cli (on root directory) `Instruction given in firebase flutter setting`
-    - Add firebase_core dependencies
-    - Change to 21 minimum sdk
+    - Add firebase_core dependencies `It's dependency`
+    - Change to 21 minimum sdk `In build.gradle file`
 
 2. **Flutter firebase setup**
     - Add necessary dependencies like firebase_core, firebase_messaging, flutter_local_notification,
-      app_setting
+      app_setting `https://pub.dev`
     - Make a class for firebase notification permission
     - Take 2 permission authorized and probational if all are denied then open the setting for
       permission
